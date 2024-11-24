@@ -19,9 +19,21 @@ sadBtn.addEventListener("click", () => {
   alert("Feeling blue? It's okay to cry 😢."); // Sad message
 });
 
-// Repeat similar for other buttons...
+// Angry button pe click ka effect
+angryBtn.addEventListener("click", () => {
+  document.body.style.backgroundColor = "#f44336"; // Angry red background
+  secretMood.style.display = "none"; // Secret mood ko hide kar diya
+  alert("Rage mode activated! 😡🔥"); // Angry message
+});
 
-// Konami Code Easter egg
+// Confused button pe click ka effect
+confusedBtn.addEventListener("click", () => {
+  document.body.style.backgroundColor = "#b39ddb"; // Confused purple background
+  secretMood.style.display = "none"; // Secret mood ko hide kar diya
+  alert("Confusion level: Max 🤯❓"); // Confused message
+});
+
+// Konami Code Easter egg (jo secret mood ko unlock karega)
 let keySequence = []; // Sequence store karne ke liye
 document.addEventListener("keydown", (event) => {
   const konamiCode = [
