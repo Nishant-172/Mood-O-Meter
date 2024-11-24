@@ -1,38 +1,28 @@
-// Selecting mood buttons
-const happyBtn = document.getElementById("happy");
-const sadBtn = document.getElementById("sad");
-const angryBtn = document.getElementById("angry");
-const confusedBtn = document.getElementById("confused");
-const secretMood = document.getElementById("secret-mood");
+// Buttons ko select karna
+const happyBtn = document.getElementById("happy"); // Happy mood ka button
+const sadBtn = document.getElementById("sad"); // Sad mood ka button
+const angryBtn = document.getElementById("angry"); // Angry mood ka button
+const confusedBtn = document.getElementById("confused"); // Confused mood ka button
+const secretMood = document.getElementById("secret-mood"); // Secret chill mode ka div
 
-// Adding click events for each mood
+// Happy button pe click ka effect
 happyBtn.addEventListener("click", () => {
-  document.body.style.backgroundColor = "#ffe57f"; // Happy yellow vibes
-  secretMood.style.display = "none"; // Hide secret mood
-  alert("Yay! You're happy now! 🎉");
+  document.body.style.backgroundColor = "#ffe57f"; // Happy yellow background
+  secretMood.style.display = "none"; // Secret mood ko hide kar diya
+  alert("Yay! You're happy now! 🎉"); // Pop-up message
 });
 
+// Sad button pe click ka effect
 sadBtn.addEventListener("click", () => {
-  document.body.style.backgroundColor = "#90caf9"; // Sad blue vibes
-  secretMood.style.display = "none"; // Hide secret mood
-  alert("Feeling blue? It's okay to cry 😢.");
+  document.body.style.backgroundColor = "#90caf9"; // Sad blue background
+  secretMood.style.display = "none"; // Secret mood ko hide kar diya
+  alert("Feeling blue? It's okay to cry 😢."); // Sad message
 });
 
-angryBtn.addEventListener("click", () => {
-  document.body.style.backgroundColor = "#ef9a9a"; // Angry red vibes
-  secretMood.style.display = "none"; // Hide secret mood
-  alert("Rage mode activated! 💢🔥");
-});
-
-confusedBtn.addEventListener("click", () => {
-  document.body.style.backgroundColor = "#ce93d8"; // Confused purple vibes
-  document.body.style.transform = "rotate(5deg)"; // Screen tilt effect
-  setTimeout(() => (document.body.style.transform = "rotate(-5deg)"), 100); // Swing back
-  alert("Confused? Even the screen doesn't know what's happening 🤯.");
-});
+// Repeat similar for other buttons...
 
 // Konami Code Easter egg
-let keySequence = [];
+let keySequence = []; // Sequence store karne ke liye
 document.addEventListener("keydown", (event) => {
   const konamiCode = [
     "ArrowUp",
@@ -45,13 +35,13 @@ document.addEventListener("keydown", (event) => {
     "ArrowRight",
     "b",
     "a",
-  ];
+  ]; // Secret code define kiya
 
-  keySequence.push(event.key);
+  keySequence.push(event.key); // Pressed key ko sequence me add karo
   if (keySequence.join("").includes(konamiCode.join(""))) {
-    document.body.style.backgroundColor = "#a5d6a7"; // Calm green vibes
-    secretMood.style.display = "block"; // Show secret mood
-    alert("Chill mode unlocked! 🧘‍♂️✨ Relax and vibe.");
+    document.body.style.backgroundColor = "#a5d6a7"; // Chill green background
+    secretMood.style.display = "block"; // Secret mood dikhana
+    alert("Chill mode unlocked! 🧘‍♂️✨ Relax and vibe."); // Message for success
     keySequence = []; // Reset sequence
   }
 });
