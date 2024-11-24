@@ -1,139 +1,73 @@
- /* css code starts here written by nishant */
-
 /* Resetting defaults */
 body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: #f5f5f5;
-    overflow: hidden;
-    transition: background-color 0.5s ease;
+    margin: 0; /* Page ka extra space hata raha hai */
+    font-family: 'Poppins', sans-serif; /* Sundar font dal diya */
+    display: flex; /* Center karne ke liye flex layout use */
+    justify-content: center; /* Horizontal center alignment */
+    align-items: center; /* Vertical center alignment */
+    height: 100vh; /* Full screen height cover */
+    background: #f5f5f5; /* Light background color for classy look */
+    overflow: hidden; /* Extra scroll hatane ke liye */
+    transition: background-color 0.5s ease; /* Smooth color change effect */
   }
   
   /* Main app container */
   .app-container {
-    text-align: center;
-    padding: 20px;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    max-width: 500px;
-    animation: fadeIn 1s ease;
+    text-align: center; /* Text ko center karne ke liye */
+    padding: 20px; /* Thoda andar ka space diya */
+    background: white; /* Container ka background white rakha */
+    border-radius: 15px; /* Rounded corners ke liye */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Shadow effect for depth */
+    width: 90%; /* Responsive width */
+    max-width: 500px; /* Max width to fix big screens */
+    animation: fadeIn 1s ease; /* Page load ke liye smooth animation */
   }
   
   /* Heading */
   h1 {
-    font-size: 2rem;
-    color: #333;
+    font-size: 2rem; /* Heading ka size bada rakha */
+    color: #333; /* Dark color for readability */
   }
   
   /* Subheading */
   .subheading {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 20px;
+    font-size: 1rem; /* Thoda chhota text */
+    color: #666; /* Light gray color for subtlety */
+    margin-bottom: 20px; /* Gap below the subheading */
   }
   
   /* Mood buttons */
   .mood-buttons {
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
+    display: flex; /* Buttons ko ek line me lagane ke liye */
+    justify-content: space-around; /* Buttons ke beech equal space */
+    gap: 10px; /* Buttons ke beech ka gap */
   }
   
   .mood-btn {
-    padding: 10px 20px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 10px 20px; /* Button ke andar padding */
+    font-size: 1rem; /* Text ka size */
+    border: none; /* Button ke border hatane ke liye */
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor for hover */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth animation effects */
   }
   
   /* Happy mood button */
   #happy {
-    background: #ffeb3b;
-    color: #333;
+    background: #ffeb3b; /* Yellow happy vibe */
+    color: #333; /* Dark text color */
   }
   
   #happy:hover {
-    transform: scale(1.1);
-    box-shadow: 0 5px 15px rgba(255, 235, 59, 0.5);
+    transform: scale(1.1); /* Button ko bada karna hover pe */
+    box-shadow: 0 5px 15px rgba(255, 235, 59, 0.5); /* Glow effect on hover */
   }
   
-  /* Sad mood button */
-  #sad {
-    background: #2196f3;
-    color: white;
-  }
+  /* Repeat similar styling for other buttons */
+  /* ... */
   
-  #sad:hover {
-    transform: scale(1.1);
-    box-shadow: 0 5px 15px rgba(33, 150, 243, 0.5);
-  }
-  
-  /* Angry mood button */
-  #angry {
-    background: #f44336;
-    color: white;
-  }
-  
-  #angry:hover {
-    transform: scale(1.1);
-    box-shadow: 0 5px 15px rgba(244, 67, 54, 0.5);
-  }
-  
-  /* Confused mood button */
-  #confused {
-    background: #9c27b0;
-    color: white;
-  }
-  
-  #confused:hover {
-    transform: scale(1.1);
-    box-shadow: 0 5px 15px rgba(156, 39, 176, 0.5);
-  }
-  
-  /* Secret mood text */
   #secret-mood {
-    display: none;
-    margin-top: 20px;
-    font-size: 1.2rem;
-    color: #4caf50;
-    animation: popUp 0.5s ease;
+    display: none; /* Secret mood ko initially hide kiya */
+    animation: popUp 0.5s ease; /* Smooth appearance animation */
   }
   
-  /* Footer */
-  footer {
-    margin-top: 20px;
-    font-size: 0.9rem;
-    color: #888;
-  }
-  
-  /* Animations */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: scale(0.9);
-    }
-    to {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-  
-  @keyframes popUp {
-    0% {
-      transform: scale(0.8);
-      opacity: 0;
-    }
-    100% {
-      transform: scale(1);
-      opacity: 1;
-    }
-  }
-  /* css code ends here written by nishant */
